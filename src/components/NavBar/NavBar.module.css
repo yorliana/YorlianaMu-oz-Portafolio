@@ -1,15 +1,29 @@
-.header{
+.navbar{
   display: flex;
-
   padding: 30px;
   width: 1480px;
  color: white;
  background: white;
+ border-bottom: 1px solid #ccc; 
 }
 
+.navbar img{
+  width: 200px;
+  margin-left: 70px;
+
+}
+.navbar a{
+
+  padding: 0 108px;
+  margin-top: 10px;
+  margin-bottom:  30px;
+  color: black;
+  font-family: sans-serif;
+  font-size: 14px;
+}
 
 .text h1 {
-  font-size: 3rem;
+  font-size: 18px;
   line-height: 1.2;
 }
 
@@ -21,16 +35,16 @@
 
 .purple {
   background-color: black;
-  color: #7b5fff;
+  color: black;
   padding: 0 10px;
 }
 
 .text p {
   margin-top: 20px;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .image img {
-  max-width: 500px;
+  max-width: 200px;
   border-radius: 10px;
 }
