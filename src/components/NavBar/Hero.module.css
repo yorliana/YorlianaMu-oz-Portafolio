@@ -1,0 +1,38 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+width: 1480;
+  background-color: white;
+}
+
+.text h1 {
+  font-size: 80px;
+  line-height: 1.2;
+  padding-left: 100px;
+}
+
+.white {
+  background-color: black;
+  color: white;
+  padding: 0 10px;
+}
+
+.purple {
+  background-color: black;
+  color: #7b5fff;
+  padding: 0 10px;
+}
+
+.text p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: black;
+  padding-left: 100px;
+}
+
+.image img {
+width: 640px;
+  height: 800px;
+  border-radius: 15px;
+}

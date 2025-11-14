@@ -1,0 +1,36 @@
+.header{
+  display: flex;
+
+  padding: 30px;
+  width: 1480px;
+ color: white;
+ background: white;
+}
+
+
+.text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.white {
+  background-color: black;
+  color: white;
+  padding: 0 10px;
+}
+
+.purple {
+  background-color: black;
+  color: #7b5fff;
+  padding: 0 10px;
+}
+
+.text p {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.image img {
+  max-width: 500px;
+  border-radius: 10px;
+}
