@@ -10,30 +10,24 @@
   position: relative;
 }
 
-
-.white {
-  background-color: black;
-  color: white;
-  padding: 0 10px;
-}
-
-.purple {
-  background-color: black;
-  color: black;
-  padding: 0 10px;
-}
-
 .text p {
-  margin-top: 34rem;
-  font-size: 18px;
+  margin-top: 4rem;
+  font-size: 14px;
   color: black;
-  padding-left: 95px;
+  padding-left: 120px;
+  font-family: sans-serif;
+  padding-bottom: 0;
 }
-
+.p1{
+  font-size:18px;
+  line-height: 1;
+  font-weight: bold;
+ 
+}
 .hero img{
 padding-left: 100px;
 padding-bottom: 5px;
- width: 980px;
+ width: 780px;
  display: flex;
  flex-direction: row;
  margin-top: 10px;
@@ -44,23 +38,39 @@ padding-bottom: 5px;
 }
 
 .image  {
-  width:100vh;
-  height:80vh;
+  width:700px;
+  height:850px;
   border-radius: 15px;
-  flex-direction: row;
+  justify-content: right;
   display: flex ;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
+  padding-right: 180px;
+  float:right
+
+
     
 }
 
 .hero p{
-  font-size: 18px;
+  font-size: 20px;
     line-height: 1;
+    font-family: sans-serif;
 }
 
 .logo {
-  width: 50px;;
+  
+  padding: 35rem;
+  display: flex;
+  justify-content: flex-end; 
+  width: 100px;
+  position: absolute;
+  right: 0;   /* al final */
+  top: 0;     /* ajusta */
+  z-index: 10;
+ padding-right: 60px;
 
+}
+.foto{
+  display: flex;
+  padding-top: 55px;
+  padding-left: 120px;
 }
