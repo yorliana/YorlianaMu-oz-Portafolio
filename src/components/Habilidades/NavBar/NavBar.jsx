@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./NavBar.module.css";
-import img from "../../assets/landing/img3.webp"
-import img4 from "../../assets/landing/img4.webp"
+import img from "../../../assets/habilidades/img10.webp"
+
 const NavBar = () => {
   return (
     <header className={styles.navbar}>
+      
         <img src= {img} alt="" />
      
       <nav className={styles.nav}>

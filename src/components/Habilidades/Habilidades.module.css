@@ -1,0 +1,27 @@
+.contenido{
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: black;
+    margin-top: 0;
+    margin: 0;
+    padding: 0;
+}
+.contenido img{
+   
+   display: flex;
+ padding-left: 120px;
+}
+
+.contenido letra{
+    font-size: 18px;
+    color: white;
+    background-color: white;
+    }
+
+.p{
+  font-size: 16px;         /* grosor */
+  background-color: white; /* color */
+  color: white;
+   border-bottom: 1px solid #ccc; 
+}

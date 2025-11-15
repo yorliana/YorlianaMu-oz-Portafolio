@@ -8,10 +8,10 @@ import NavBar from "../NavBar/NavBar";
 const Proyecto = () => {
     
   return (
-    <nav>
+    <>
  <NavBar/>
 
-    </nav>
+    </>
   );
 };
 
