@@ -1,10 +1,10 @@
 
 import React from "react";
-import styles from "./Home.module.css";
+import styles from "./Landing.module.css";
 import heroImage from "../../assets/landing/img1.webp"; // pon aquí la imagen de tu screenshot
 import img2 from "../../assets/landing/img2.webp"
 
-export default function Home() {
+export default function Landing() {
 
 
 

@@ -4,8 +4,10 @@
   align-items: center;
   width: 1480;
   background-color: white;
-   overflow-y: scroll;   /* sigue funcionando el scroll */
+  overflow-y: scroll;   /* sigue funcionando el scroll */
   scrollbar-width: none;
+
+  position: relative;
 }
 
 
@@ -22,27 +24,35 @@
 }
 
 .text p {
-  margin-top: -100px;
+  margin-top: 34rem;
   font-size: 18px;
   color: black;
   padding-left: 95px;
 }
 
 .hero img{
-padding-left: 95px;
-
- width: 900px;
- 
+padding-left: 100px;
+padding-bottom: 5px;
+ width: 980px;
+ display: flex;
+ flex-direction: row;
+ margin-top: 10px;
+ position: absolute;
+  top:180px;             /* ajustar vertical */
+  left: 0; 
+   z-index: 3; 
 }
 
 .image  {
-  width:950px;
-  height: 780px;
+  width:100vh;
+  height:80vh;
   border-radius: 15px;
   flex-direction: row;
   display: flex ;
-  justify-content: right;
+  justify-content: center;
   position: relative;
+  z-index: 1;
+    
 }
 
 .hero p{
