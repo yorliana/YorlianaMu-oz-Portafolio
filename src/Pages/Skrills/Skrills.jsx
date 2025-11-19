@@ -8,7 +8,7 @@ import Habilidades from "../../components/Habilidades/Habilidades.jsx";
 
 const Skrills= () => {
   return (
-    < >
+    <>
    <NavBar/>
    <Habilidades/>
    

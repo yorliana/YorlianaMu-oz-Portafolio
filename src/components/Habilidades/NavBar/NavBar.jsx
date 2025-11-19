@@ -10,11 +10,9 @@ const NavBar = () => {
      
       <nav className={styles.nav}>
         <a className={styles.a} href="/proyectos">PROYECTOS</a> 
-  
-
         <a className={styles.a} href="/conoceme">CONÓCEME</a>
         <a className={styles.a} href="/skrills">SKILLS</a>
-        <a className={styles.a}href="#contacto">CONTACTO</a>
+        <a className={styles.a}href="/contacto">CONTACTO</a>
       </nav>
     </header>
   );

@@ -5,6 +5,7 @@ import Proyectos from "../src/Pages/Proyectos/Proyectos.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Conoceme from "../src/Pages/Conoceme/Conoceme.jsx";
 import Skrills from "./Pages/Skrills/Skrills.jsx";
+import Contacto from "./Pages/Contacto/Contacto.jsx"
 import "./App.css";
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/proyectos" element={<Proyectos/>} />
           <Route path="/conoceme" element={<Conoceme/>} />
           <Route path="/skrills" element={<Skrills/>} />
+             <Route path="/contacto" element={<Contacto/>} />
           
         {/* Más rutas aquí si quieres */}
       </Routes>
