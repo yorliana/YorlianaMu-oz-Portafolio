@@ -1,11 +1,14 @@
 
 .container {
+    width: 1480px;
   display: flex;
   justify-content: center;
   gap: 60px;
   margin-top: 80px;
   flex-wrap: wrap;
   background-image: url('../../assets//trabajoss/img9.webp');
+
+  
 }
 
 .card {

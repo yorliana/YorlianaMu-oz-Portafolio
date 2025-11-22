@@ -11,9 +11,10 @@ export default function Landing() {
   
 
   return (
-    <div className={styles.hero}>
+    <div className={styles.hero}>      
+ 
       <div className={styles.text}>
-        <img className={styles.img} src={img2}  />
+
         <p className={styles.p}>
           Creando experiencias inmersivas <br />
            e interactivas para marcas. <br /> <br />
@@ -21,9 +22,12 @@ export default function Landing() {
            echa un vistazo!
         </p>
       </div>
-      <div className={styles.image}>
+      <div className={styles.heroImage}>
         <img src={heroImage} alt="Workspace" />
       </div>
+      <div className={styles.img}>   
+       <img className={styles.img} src={img2}  />
+       </div>
     </div>
   );
 };

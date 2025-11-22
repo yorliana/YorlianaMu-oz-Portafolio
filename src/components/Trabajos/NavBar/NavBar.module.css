@@ -4,14 +4,14 @@
   width: 1452px;
 
  background: black;
- border-bottom: 1px solid #ccc; 
- background-image: url('../../../assets/trabajoss/imgNav.jpg');
+
+background-image: url('../../assets//trabajoss/imgNav.jpg');
 }
 
 .navbar img{
   width: 200px;
   margin-left: 70px;
-
+background-image: url('../../assets//trabajoss/imgNav.jpg');
 }
 .navbar a{
 

@@ -5,6 +5,7 @@
  color: white;
  background: white;
  border-bottom: 1px solid #ccc; 
+   line-height: none;
 }
 
 .navbar img{
@@ -20,7 +21,7 @@
   color: black;
   font-family: sans-serif;
   font-size: 14px;
-  line-height: 0;
+  line-height: none;
 }
 
 .text h1 {
