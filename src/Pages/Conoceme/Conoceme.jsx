@@ -7,12 +7,12 @@ import Perfil from "../../components/Perfil/Perfil.jsx";
 
 const Conoceme= () => {
   return (
-    <div >
+    <>
     <NavBar/>
 <Perfil/>
   
    
-   </div>
+   </>
   );
 };
 

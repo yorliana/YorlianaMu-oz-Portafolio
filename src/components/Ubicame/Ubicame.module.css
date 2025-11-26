@@ -1,49 +1,76 @@
-.contenedor{
+.contenedor {
+  width: 100%;
+  min-height: 100vh;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  width: 1480;
-  background-color: white;
-  overflow-y: scroll;   /* sigue funcionando el scroll */
-  scrollbar-width: none;
+  justify-content: flex-start;
+  background: #fff;
+  padding-top: 80px;
+}
 
+/* CONTENEDOR que agrupa GIF + iconos */
+.areaCentral {
   position: relative;
-}
-.botonesContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 60px;
+  width: 450px;
+  height: 450px;   /* puedes ajustarlo */
+  display:flex;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
-  margin-top: 17rem; 
-}
-.contenedor img{
-  
 }
 
-.boton {
-  width: 120px;
-  height: 120px;
-  border-radius: 5px;   /* borde 5 px */
-  overflow: hidden;     /* asegura que la imagen quede dentro del cuadrado */
+/* GIF DETRÁS, centrado y cubriendo el área */
+.gifDetras {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 380px;      /* Ajustar tamaño */
+  transform: translate(-50%, -50%);
+  opacity: 0.7;      /* opcional */
+  z-index: 1;
+  pointer-events: none; /* no tapa los botones */
+}
+
+/* GRID de los íconos */
+.grid {
+  position: relative;
+  z-index: 3; /* botones encima del GIF */
+  display: grid;
+  grid-template-columns: repeat(3, 140px);
+  grid-auto-rows: 140px;
+  gap: 25px;
+}
+
+/* Cajas cuadradas con sombra */
+.caja {
+  background: #fff;
+  border-radius: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.boton img {
+.caja:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22);
+}
+
+.caja img {
+  width: 70%;
+}
+
+/* Elementos decorativos */
+.cajaDecoracion img {
   width: 100%;
   height: 100%;
-  object-fit: cover;     /* adapta la imagen al cuadrado */
+  border-radius: 22px;
 }
 
-.boton:hover {
-  transform: scale(1.08);  /* efecto suave */
+.imgBottom {
+  margin-top: 50px;
+  width: 200px;
+  opacity: 0.8;
 }

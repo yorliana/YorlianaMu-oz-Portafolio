@@ -1,20 +1,23 @@
 .navbar{
   display: flex;
   padding: 30px;
-  width: 1452px;
-
+  width: 100%;
+border-bottom: 0.3px solid #ccc;
  background: black;
+ background-image: url("../../../assets//trabajoss/imgNav.jpg"); /* tu imagen */
+  background-size: cover;      /* cubre todo el navbar */
+  background-position: left; /* centrado */
 
-background-image: url('../../assets//trabajoss/imgNav.jpg');
 }
 
 .navbar img{
   width: 200px;
   margin-left: 70px;
 background-image: url('../../assets//trabajoss/imgNav.jpg');
+
 }
 .navbar a{
-
+text-decoration: none;
   padding: 0 108px;
   margin-top: 10px;
   margin-bottom:  30px;

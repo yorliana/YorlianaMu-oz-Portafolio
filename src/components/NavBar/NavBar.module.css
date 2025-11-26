@@ -5,7 +5,7 @@
  color: white;
  background: white;
  border-bottom: 1px solid #ccc; 
-   line-height: none;
+ 
 }
 
 .navbar img{
@@ -14,19 +14,19 @@
 
 }
 .navbar a{
-
+text-decoration: none;
   padding: 0 108px;
   margin-top: 10px;
   margin-bottom:  30px;
   color: black;
   font-family: sans-serif;
   font-size: 14px;
-  line-height: none;
+text-decoration: none;
 }
 
 .text h1 {
   font-size: 18px;
-  line-height: 1.2;
+
 }
 
 .white {
