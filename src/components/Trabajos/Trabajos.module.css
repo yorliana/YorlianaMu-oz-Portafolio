@@ -1,25 +1,26 @@
-
 .container {
-  width: 1380px; /* ocupa todo el ancho de la pantalla */
-  /* opcional, para no extender demasiado */
-  margin: 0 auto; /* centra el grid */
+  width: 100%;
+  
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
-  padding: 60px 20px; /* un poco de padding lateral para evitar blancos */
-
+  padding: 60px 20px;
+  justify-items: center;
   background-image: url(../../assets/trabajoss/img9.webp);
-  background-size: cover; /* asegura que la imagen de fondo cubra todo */
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
-/* Elimina márgenes adicionales en el body o grid externo */
+
 body {
   margin: 0;
   padding: 0;
+   overflow-x: hidden;
 }
-/* --- CARD --- */
+
 .card {
   width: 278px;
 image-rendering: crisp-edges;

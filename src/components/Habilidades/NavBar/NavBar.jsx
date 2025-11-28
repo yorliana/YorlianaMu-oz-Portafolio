@@ -1,21 +1,45 @@
 import React from "react";
 import styles from "./NavBar.module.css";
-import img from "../../../assets/habilidades/img10.webp"
+import logo from "../../../assets/habilidades/img10.webp";
+import flecha from "../../../assets/habilidades/img12.webp";
 
 const NavBar = () => {
   return (
     <header className={styles.navbar}>
-      
-        <img src= {img} alt="" />
-     
+      <img className={styles.logo} src={logo} alt="logo" />
+
       <nav className={styles.nav}>
-        <a className={styles.a} href="/proyectos">PROYECTOS</a> 
-        <a className={styles.a} href="/conoceme">CONÓCEME</a>
-        <a className={styles.a} href="/skrills">SKILLS</a>
-        <a className={styles.a}href="/contacto">CONTACTO</a>
+        <a className={styles.a} href="/proyectos">
+          PROYECTOS
+          <span className={styles.icon}>
+            <img src={flecha} alt="icono" />
+          </span>
+        </a>
+
+        <a className={styles.a} href="/conoceme">
+          CONÓCEME
+          <span className={styles.icon}>
+            <img src={flecha} alt="icono" />
+          </span>
+        </a>
+
+        <a className={styles.a} href="/skrills">
+          SKILLS
+          <span className={styles.icon}>
+            <img src={flecha} alt="icono" />
+          </span>
+        </a>
+
+        <a className={styles.a} href="/contacto">
+          CONTACTO
+          <span className={styles.icon}>
+            <img src={flecha} alt="icono" />
+          </span>
+        </a>
       </nav>
     </header>
   );
 };
 
 export default NavBar;
+

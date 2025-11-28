@@ -1,50 +1,63 @@
-.navbar{
+/* Contenedor principal */
+.navbar {
   display: flex;
-  padding: 30px;
-  width: 1452ç5px;
- color: white;
- background: black;
- border-bottom: 1px solid #ccc; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 60px;
+  background: black;
+   border-bottom: 1px solid #ccc; 
+   font-family: sans-serif;
 }
-
-.navbar img{
+.logo{
   width: 200px;
-  margin-left: 70px;
-
+  padding-left: 50px;
 }
-.navbar a{
-text-decoration: none;
-  padding: 0 108px;
-  margin-top: 10px;
-  margin-bottom:  30px;
-  color: white;
-  font-family: sans-serif;
-  font-size: 14px;
+/* Contenedor del menú */
+.nav {
+  display: flex;
+  gap: 70px;              /* separación horizontal EXACTA */
+  align-items:left;
 }
 
-.text h1 {
-  font-size: 18px;
-  line-height: 1.2;
+/* Link del menú */
+.a {
+  display: flex;
+  align-items: center;
+  gap: 10px;              /* espacio entre texto y círculo */
+  font-size: 10px;
+  text-decoration: none;
+    letter-spacing: 8px; 
+    font-family: sans-serif; 
+    font-weight:  700;
+color: white;
+padding-right: 30px;
 }
 
-.white {
-  background-color: black;
-  color: white;
-  padding: 0 10px;
+/* Círculo negro */
+.icon {
+   width: 22px;
+  height: 22px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.purple {
-  background-color: black;
-  color: black;
-  padding: 0 10px;
+/* Imagen PNG dentro del círculo */
+.icon img {
+  width: 30px;
+  height:20px;
+   /* hace la flecha blanca */
 }
 
-.text p {
-  margin-top: 20px;
-  font-size: 16px;
+/* Hover animado */
+.a:hover .icon {
+  transform: scale(1.15);
+  transition: 0.2s;
 }
 
-.image img {
-  max-width: 200px;
-  border-radius: 10px;
+.a:hover {
+  opacity: 0.8;
 }
+
