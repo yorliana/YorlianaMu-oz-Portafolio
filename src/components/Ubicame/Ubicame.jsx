@@ -27,7 +27,7 @@ export default function Ubicame() {
 
          </div>
 <div className={styles.gridGmail}>
-      <a href="https://www.gmail.com/in/yorlianamu%C3%B1oz/" target="_blank" className={styles.caja1}>
+      <a href="https://mail.google.com/mail/u/0/#inbox?authuser=ing.yorlianam24@gmail.com" target="_blank" className={styles.caja1}>
         <img src={img24} alt="LinkedIn" />
         
       </a><img src={img25} alt="LinkedIn" />
