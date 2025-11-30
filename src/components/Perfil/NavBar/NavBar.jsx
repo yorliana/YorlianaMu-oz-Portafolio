@@ -1,21 +1,47 @@
 import React from "react";
 import styles from "./NavBar.module.css";
-import img from "../../../assets/habilidades/img10.webp"
-
+import logo from "../../assets/landing/img3.webp";
+import flecha from "../../assets/perfil/imgc.webp";
+import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <header className={styles.navbar}>
-      
-        <img src= {img} alt="" />
-     
+     <Link to="/">
+  <img className={styles.logo} src={logo} alt="logo" />
+</Link>
+
       <nav className={styles.nav}>
-        <a className={styles.a} href="/proyectos">PROYECTOS</a> 
-        <a className={styles.a} href="/conoceme">CONÓCEME</a>
-        <a className={styles.a} href="/skrills">SKILLS</a>
-        <a className={styles.a}href="/contacto">CONTACTO</a>
+        <Link to="/proyectos" className={styles.a} >
+          PROYECTOS
+          <span className={styles.icon}>
+            <img src={flecha} alt="icono" />
+          </span>
+        </Link>
+
+        <Link to="/conoceme" className={styles.a}>CONÓCEME
+          <span className={styles.icon}>
+            <img src={flecha} alt="icono" />
+          </span>
+        </Link>
+
+        <Link to="/skrills" className={styles.a}>
+          SKILLS
+          <span className={styles.icon}>
+            <img src={flecha} alt="icono" />
+          </span>
+        </Link>
+
+        <Link to="/contacto" className={styles.a}>
+          CONTACTO
+          <span className={styles.icon}>
+            <img src={flecha} alt="icono" />
+          </span>
+        </Link>
       </nav>
+    
     </header>
   );
 };
 
 export default NavBar;
+

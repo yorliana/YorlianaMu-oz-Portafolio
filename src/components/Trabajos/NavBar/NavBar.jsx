@@ -2,40 +2,41 @@ import React from "react";
 import styles from "./NavBar.module.css";
 import logo from "../../../assets/trabajoss/img6.webp";
 import flecha from "../../../assets/perfil/imgb.webp";
-
+import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <header className={styles.navbar}>
-      <img className={styles.logo} src={logo} alt="logo" />
+     <Link to="/">
+  <img className={styles.logo} src={logo} alt="logo" />
+</Link>
 
       <nav className={styles.nav}>
-        <a className={styles.a} href="/proyectos">
+        <Link to="/proyectos" className={styles.a} >
           PROYECTOS
           <span className={styles.icon}>
             <img src={flecha} alt="icono" />
           </span>
-        </a>
+        </Link>
 
-        <a className={styles.a} href="/conoceme">
-          CONÓCEME
+        <Link to="/conoceme" className={styles.a}>CONÓCEME
           <span className={styles.icon}>
             <img src={flecha} alt="icono" />
           </span>
-        </a>
+        </Link>
 
-        <a className={styles.a} href="/skrills">
+        <Link to="/skrills" className={styles.a}>
           SKILLS
           <span className={styles.icon}>
-            <img src={flecha} alt="icono" />
+            <img src={flecha} alt="icono"/>
           </span>
-        </a>
+        </Link>
 
-        <a className={styles.a} href="/contacto">
+        <Link to="/contacto" className={styles.a}>
           CONTACTO
           <span className={styles.icon}>
             <img src={flecha} alt="icono" />
           </span>
-        </a>
+        </Link>
       </nav>
     </header>
   );

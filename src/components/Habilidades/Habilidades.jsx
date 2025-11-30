@@ -5,10 +5,12 @@ import heroImage from "../../assets/habilidades/img13.webp"
 export default function Habilidades() {
 
   return (
+  
     <div className={styles.contenido}>
-
-      {/* Línea superior */}
-      <div className={styles.linea}></div>
+      
+     <div className= {styles.linea}>
+      
+      </div>
 
       <div className={styles.wrapper}>
         

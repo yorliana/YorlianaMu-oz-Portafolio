@@ -6,7 +6,7 @@ import img25 from "../../assets/contacto/img25.webp";
 import img26 from "../../assets/contacto/img26.webp";
 import img27 from "../../assets/contacto/img27.webp";
 import img23 from "../../assets/contacto/img23.webp"
-import imgAnim from "../../assets/contacto/imgfondo.png";
+import imgAnim from "../../assets/contacto/imfondo.png";
 
 export default function Ubicame() {
   return (

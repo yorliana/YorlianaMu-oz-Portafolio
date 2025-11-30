@@ -7,6 +7,7 @@
   background: white;
    border-bottom: 1px solid #ccc; 
    font-family: sans-serif;
+   font-weight: 700;
 }
 .logo{
   width: 200px;
@@ -17,6 +18,8 @@
   display: flex;
   gap: 70px;              /* separación horizontal EXACTA */
   align-items:left;
+  font-weight: bold;
+    letter-spacing: 8px; 
 }
 
 /* Link del menú */
@@ -24,13 +27,15 @@
   display: flex;
   align-items: center;
   gap: 10px;              /* espacio entre texto y círculo */
-  font-size: 10px;
+  font-size: 11px;
   text-decoration: none;
     letter-spacing: 8px; 
     font-family: sans-serif; 
     font-weight:  700;
 color: black;
 padding-right: 30px;
+    letter-spacing: 8px; 
+
 }
 
 /* Círculo negro */

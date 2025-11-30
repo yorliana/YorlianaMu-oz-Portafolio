@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   gap: 10px;              /* espacio entre texto y círculo */
-  font-size: 10px;
+  font-size: 11px;
   text-decoration: none;
     letter-spacing: 8px; 
     font-family: sans-serif; 

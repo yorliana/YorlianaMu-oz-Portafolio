@@ -16,7 +16,7 @@
 }
 .text p {
   margin-top: 4rem;
-  font-size: 14px;
+  font-size: 18px;
   color: black;
   padding-left: 120px;
   font-family: sans-serif;
@@ -29,25 +29,25 @@
  
 }
 .hero img{
-padding-left: 100px;
+padding-left: 100%;
 padding-bottom: 5px;
- width: 780px;
+ width: 800px;;
  display: flex;
  flex-direction: row;
  margin-top: 10px;
  position: absolute;
-  top:180px;             /* ajustar vertical */
+           /* ajustar vertical */
   left: 0; 
    z-index: 3; 
 }
 
 .image  {
-  width:700px;
+
   height:850px;
   border-radius: 15px;
   justify-content: right;
   display: flex ;
-  padding-right: 180px;
+  padding-right: 182px;
   float:right
 
 
@@ -69,8 +69,9 @@ padding-bottom: 5px;
  padding-right: 60px;
 
 }
-.foto{
+.foto img{
   display: flex;
   padding-top: 55px;
   padding-left: 120px;
+width: 690px;
 }
