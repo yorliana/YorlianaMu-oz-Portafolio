@@ -27,14 +27,16 @@ export default function Ubicame() {
 
          </div>
 <div className={styles.gridGmail}>
-      <a href="https://mail.google.com/mail/u/0/#inbox?authuser=ing.yorlianam24@gmail.com" target="_blank" className={styles.caja1}>
-        <img src={img24} alt="LinkedIn" />
+      <a   href={`https://mail.google.com/mail/?view=cm&fs=1&to=ing.yorlianam24@gmail.com&su=Asunto&body=Hola%20desde%20React`}
+  target="_blank"
+  rel="noopener noreferrer" className={styles.caja1}>
+        <img src={img24} alt="gmail" />
         
       </a><img src={img25} alt="LinkedIn" />
 </div>
      
 <div className={styles.gridLinkedin}>
-  <img src={img26} alt="Gmail" />
+  <img src={img26} alt="linkedin" />
       <a href="https://linkedin.com" target="_blank" className={styles.caja1}>
         <img src={img23} alt="" /> 
       </a>
