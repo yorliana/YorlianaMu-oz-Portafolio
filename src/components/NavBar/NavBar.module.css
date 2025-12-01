@@ -1,46 +1,47 @@
-/* Contenedor principal */
+/* =================== */
+/* 🖥️  PC / ESCRITORIO */
+/* =================== */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 25px 60px;
   background: white;
-   border-bottom: 1px solid #ccc; 
-   font-family: sans-serif;
-   font-weight: 700;
+  border-bottom: 1px solid #ccc;
+  font-family: sans-serif;
+  font-weight: 700;
 }
-.logo{
+
+.logo {
   width: 200px;
   padding-left: 50px;
 }
+
 /* Contenedor del menú */
 .nav {
   display: flex;
-  gap: 70px;              /* separación horizontal EXACTA */
-  align-items:left;
+  gap: 70px;
+  align-items: center;
   font-weight: bold;
-    letter-spacing: 8px; 
+  letter-spacing: 8px;
 }
 
 /* Link del menú */
 .a {
   display: flex;
   align-items: center;
-  gap: 10px;              /* espacio entre texto y círculo */
+  gap: 10px;
   font-size: 11px;
   text-decoration: none;
-    letter-spacing: 8px; 
-    font-family: sans-serif; 
-    font-weight:  700;
-color: black;
-padding-right: 30px;
-    letter-spacing: 8px; 
-
+  letter-spacing: 8px;
+  color: black;
+  font-weight: 700;
+  padding-right: 30px;
 }
 
 /* Círculo negro */
 .icon {
-   width: 22px;
+  width: 22px;
   height: 22px;
   background: black;
   border-radius: 50%;
@@ -52,8 +53,7 @@ padding-right: 30px;
 /* Imagen PNG dentro del círculo */
 .icon img {
   width: 30px;
-  height:20px;
-   /* hace la flecha blanca */
+  height: 20px;
 }
 
 /* Hover animado */
@@ -64,4 +64,98 @@ padding-right: 30px;
 
 .a:hover {
   opacity: 0.8;
+}
+
+
+/* =================== */
+/* 📱 TABLET (≤1024px) */
+/* =================== */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 20px 40px;
+  }
+
+  .nav {
+    gap: 40px;
+  }
+
+  .a {
+    font-size: 10px;
+    letter-spacing: 4px;
+  }
+}
+
+
+/* =================== */
+/* 📱📱 MÓVIL (≤768px) */
+/* =================== */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .a {
+    font-size: 10px;
+    letter-spacing: 4px;
+  }
+  .logo {
+    width: 150px;
+    padding-left: 0;
+  }
+
+  /* Ocultar menú de escritorio */
+  .nav {
+    display: none;
+  }
+
+  /* Menú hamburguesa */
+  .menu-btn {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  /* Menú desplegable */
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: white;
+    width: 200px;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .mobile-nav .a {
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding-right: 0;
+  }
+}
+
+
+/* =================== */
+/* 📱 MÓVIL PEQUEÑO ≤480px */
+/* =================== */
+@media (max-width: 480px) {
+
+  .logo {
+    width: 120px;
+  }
+
+  .a {
+    font-size: 12px;
+  }
+
+  .mobile-nav {
+    width: 100%;
+    left: 0;
+    border-left: none;
+  }
 }

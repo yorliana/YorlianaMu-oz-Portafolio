@@ -1,44 +1,117 @@
-.contenido {
-width: 100%;
+.container {
+  width: 100%;
+  max-height: 1200px;
   display: flex;
-  justify-content: left;
-  padding-top: 10px; /* Subir/bajar la sección entera */
+  justify-content: center;
+ 
   background-color: black;
 }
-.linea {
-  height: 2px;
-  background-color: white;
-  margin: 20px 0;
-
-}
-
-.wrapper {
-  display: flex;
+.heroImage{
+ 
+ padding-left: 30px;
   flex-direction: row;
-  gap: 200px; /* separación foto-texto */
-  align-items: left; /* centra verticalmente como en tu captura */
+  position: relative; /* importante para que las posiciones absolutas funcionen */
+  padding-top: 50px;
+ 
 }
 
-.imageContainer img {
-  width: 480px;
-padding-bottom: 20px;
-  border-radius: 20px;
+.cuadro{
+  position: absolute; 
+ left: -30px;           /* posición horizontal */
+  top: 90px;        /* súbela encima (ajusta el número que quieras) */
+  z-index: 2;        /* para que quede por encima */
+  width: 100px; 
+  height:100px;
+  
+}
+.y{
+  position: absolute; 
+  margin-top: 16rem;
+justify-content: left;
+right: -250px;
+}
+.cuadros{
+  position: absolute; 
+  margin-top: -250px;
+  width: 250px;
+  right: 10px;
+
+}
+
+.linea {
+  width: 870px;
+  height: 400px;
+  padding-top: 95px;
+   margin: 20px 0; 
+  margin: 80px 0;
+ 
+}
+
+
+.h1{
+color: white;
+  font-size: 18px;
+  padding-left:42rem;
+  
+  margin-bottom: 20px;
+ word-spacing:80px; 
   display: flex;
-  padding-left: 120px;
-  padding-top: 30px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.wrapper {
+  flex-direction: row;
+  gap: 80px; /* más razonable */
+  align-items: center;
+}
+.h1{
+  padding-left: 80px;
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+  justify-content: left;
+  
+  
+}
+.imageContainer img {
+  width: 100%;
+  max-width: 350px; /* límite para pantallas grandes */
+  border-radius: 20px;
 }
 
 .textContainer {
   max-width: 350px;
-  margin-top: 15rem;
-  padding-left: 23rem;
+  margin-top: 4rem;
+  margin-left: 29rem;
 }
 
 .letras {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
   color: white;
   line-height: 1.4;
 }
 
+
+/* 📱 MÓVILES */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column; /* imagen arriba, texto abajo */
+    gap: 20px;
+    text-align: center;
+  }
+
+  .textContainer {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .letras {
+    font-size: 18px;
+  }
+
+  .imageContainer img {
+    max-width: 280px; /* más pequeña para móvil */
+  }
+}
 
