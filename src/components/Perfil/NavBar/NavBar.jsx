@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./NavBar.module.css";
-import logo from "../../assets/landing/img3.webp";
-import flecha from "../../assets/perfil/imgc.webp";
+import logo from "../../../assets/perfil/imga.webp";
+import flecha from "../../../assets/perfil/imgc.webp";
 import { Link } from "react-router-dom";
 const NavBar = () => {
   return (

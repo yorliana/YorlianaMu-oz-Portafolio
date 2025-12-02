@@ -1,77 +1,83 @@
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 40px;
+  position: relative;
+  background-color: #fff; 
+}
+
+.foto img {
+  width: 750px;
+  border-radius: 10px;
+  object-fit: cover;
+  padding-top: 30px;
+  padding-left: 80px;
+}
+
 .hero {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1480;
-  background-color: white;
-  overflow-y: scroll;   /* sigue funcionando el scroll */
-  scrollbar-width: none;
+  margin-left: 80px;
+  position: absolute;
+   font-family: sans-serif;
+   padding-left: 50px;
 
-  position: relative;
+   
 }
-.hero p{
-  font-size: 20px;
-    line-height: 1;
-    font-family: sans-serif;
+
+.text {
+  margin-bottom: 20px;
+   display: flex;
+  margin-left: 80px;
+  position: absolute;
+   font-family: sans-serif;
+   padding-left: 50px;
 }
-.text p {
-  margin-top: 4rem;
-  font-size: 18px;
-  color: black;
-  padding-left: 120px;
+
+.p1 {
   font-family: sans-serif;
-  padding-bottom: 0;
-}
-.p1{
-  font-size:18px;
-  line-height: 1;
-  font-weight: bold;
- 
-}
-.hero img{
-padding-left: 100%;
-padding-bottom: 5px;
- width: 800px;;
- display: flex;
- flex-direction: row;
- margin-top: 10px;
- position: absolute;
-           /* ajustar vertical */
-  left: 0; 
-   z-index: 3; 
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
 }
 
-.image  {
-
-  height:850px;
-  border-radius: 15px;
-  justify-content: right;
-  display: flex ;
-  padding-right: 182px;
-  float:right
-
-
-    
+.p {
+  margin-top:3rem;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000;
 }
 
+.heroImage {
+  width: 370px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  padding-left: -80px;
 
+}
+
+.heroImage img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  padding-right: -150px;
+  justify-content: center;
+  display: flex;
+
+}
 
 .logo {
-  
-  padding: 35rem;
-  display: flex;
-  justify-content: flex-end; 
-  width: 100px;
   position: absolute;
-  right: 0;   /* al final */
-  top: 0;     /* ajusta */
+  bottom: 10px;
+  right: 10px;
+  width: 350px;
+  height: auto;
   z-index: 10;
- padding-right: 60px;
-
 }
-.foto img{
-  display: flex;
-  padding-top: 55px;
-  padding-left: 120px;
-width: 690px;
+
+.logo img {
+  width: 100%;
+  height: auto;
 }

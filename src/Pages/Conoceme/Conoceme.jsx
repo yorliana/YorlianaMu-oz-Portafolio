@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Conoceme.module.css"
 import img from "../../assets/landing/img3.webp"
-import NavBar from "../../components/NavBar/NavBar.jsx";
+import NavBar from "../../components/Perfil/NavBar/NavBar.jsx";
 import Perfil from "../../components/Perfil/Perfil.jsx";
 
 
