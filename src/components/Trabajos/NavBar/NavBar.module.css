@@ -1,46 +1,49 @@
 
 .navbar {
   width: 100%;
-   
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start; /* logo y hamburguesa alineados izquierda */
   padding: 25px 60px;
-  
-   border-bottom: 1px solid #ccc; 
-   font-family: sans-serif;
-   background-image: url("../../../assets//trabajoss/imgNav.jpg");
-  background-size: cover;    
-  background-position: left; 
-}
-.logo{
-  width: 200px;
-  padding-left: 50px;
+  background-image: url("../../../assets/trabajoss/imgNav.jpg"); /* tu fondo */
+  background-size: cover;
+  background-position: left;
+  border-bottom: 1px solid #ccc;
+  font-family: sans-serif;
+  font-weight: 700;
+  position: relative;
+  z-index: 100;
 }
 
+.logo {
+  width: 200px;
+  margin-left: 20px;
+  z-index: 101;
+}
+
+/* NAV DESKTOP */
 .nav {
   display: flex;
-  gap: 50px;          
-  align-items:left;
+  gap: 70px;
+  align-items: center;
+  padding-left: 200px; /* empuja el menu a la derecha */
+  transition: max-height 0.3s ease;
 }
-
 
 .a {
   display: flex;
   align-items: center;
-  gap: 10px;            
+  gap: 8px;
   font-size: 10px;
   text-decoration: none;
-    letter-spacing: 8px; 
-    font-family: sans-serif; 
-    font-weight:  700;
-color: white;
-padding-right: 100px;
+  letter-spacing: 8px;
+  font-weight: 700;
+  color: white;
+  padding-right: 30px;
 }
 
-
 .icon {
-   width: 22px;
+  width: 22px;
   height: 22px;
   background: black;
   border-radius: 50%;
@@ -49,13 +52,10 @@ padding-right: 100px;
   justify-content: center;
 }
 
-
 .icon img {
   width: 30px;
-  height:20px;
- 
+  height: 20px;
 }
-
 
 .a:hover .icon {
   transform: scale(1.15);
@@ -66,116 +66,81 @@ padding-right: 100px;
   opacity: 0.8;
 }
 
-/* ----------- RESPONSIVE ----------- */
-
-/* Tablets */
-@media (max-width: 992px) {
-  .navbar {
-    padding: 20px 30px;
-    background-position: center;
-  }
-
-  .nav {
-    gap: 30px;
-  }
-
-  .logo {
-    width: 160px;
-    padding-left: 20px;
-  }
-
-  .a {
-    font-size: 9px;
-    padding-right: 40px;
-    letter-spacing: 5px;
-  }
-}
-
-/* Móviles grandes */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .logo {
-    padding-left: 0;
-    width: 150px;
-  }
-
-  .nav {
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .a {
-    padding-right: 0;
-    font-size: 9px;
-  }
-}
-
-/* Móviles pequeños */
-@media (max-width: 480px) {
-  .navbar {
-    padding: 15px;
-    gap: 15px;
-  }
-
-  .logo {
-    width: 130px;
-  }
-
-  .nav {
-    gap: 15px;
-  }
-
-  .a {
-    font-size: 8px;
-    letter-spacing: 3px;
-  }
-
-  .icon {
-    width: 18px;
-    height: 18px;
-  }
-
-  .icon img {
-    width: 20px;
-    height: 14px;
-  }
-}
-/* Hamburguesa alineada a la izquierda */
+/* HAMBURGUESA */
 .hamburger {
   display: none;
   flex-direction: column;
-  gap: 6px;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
   cursor: pointer;
-  z-index: 2000;
-  position: relative;
- color: white;
+  z-index: 102;
+  background-color: white;
+  position:absolute;
 }
 
-/* Para alinear hamb. y logo verticalmente */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 20px;  /* espacio entre la hamburguesa y el logo */
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  background-color: white;
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  background-color: white;
+}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hamburger {
-    display: flex;
+    display: flex; /* muestra hamburguesa */
+    order: 1; /* izquierda */
+    background-color: white;
   }
 
-  /* Empujar nav a la derecha en móvil */
+  .logo {
+    order: 2;
+  }
+
   .nav {
-    margin-left: auto;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-image: url("../../../assets/trabajoss/imgNav.jpg"); /* fondo */
+    background-size: cover;
+    background-position: left;
+    overflow: hidden;
+    max-height: 0; /* cerrado inicialmente */
+    transition: max-height 0.3s ease;
+    z-index: 101;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+
+  .nav.active {
+    max-height: 500px; /* menú abierto */
+    background-color: white;
+  }
+
+  .nav a {
+    padding: 12px 0;
+    justify-content: center;
+    gap: 10px;
   }
 }

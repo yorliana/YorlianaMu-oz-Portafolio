@@ -98,7 +98,7 @@
   }
 
   .nav.open {
-    max-height: 300px; /* abierto al hacer click */
+    max-height: 500px; /* abierto al hacer click */
   }
 
   .nav a {
