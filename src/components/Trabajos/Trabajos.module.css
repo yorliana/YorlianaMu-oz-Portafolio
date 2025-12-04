@@ -82,3 +82,74 @@ width: 100%;
   font-size: 0.9rem;
   opacity: 0.8;
 }
+
+
+/* ---------- RESPONSIVE ---------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+
+  .container {
+    padding: 40px 15px;
+    gap: 30px;
+  }
+
+  .card {
+    width: 260px;
+  }
+
+  .imageWrapper {
+    height: 330px;
+  }
+}
+
+/* Móviles grandes */
+@media (max-width: 768px) {
+
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    padding: 30px 10px;
+  }
+
+  .card {
+    width: 240px;
+  }
+
+  .imageWrapper {
+    height: 300px;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .card:nth-child(even),
+  .card:nth-child(odd) {
+    margin-top: 0; /* evitar saltos en móviles */
+  }
+
+  .imageWrapper {
+    height: 260px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .tags,
+  .fecha {
+    font-size: 0.8rem;
+  }
+}

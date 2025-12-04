@@ -1,24 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./NavBar.module.css";
 import logo from "../../../assets/perfil/imga.webp";
-import flecha from "../../../assets/perfil/imgc.webp";
+import flecha from "../../../assets/perfil/imgb.webp";
 import { Link } from "react-router-dom";
+
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
     <header className={styles.navbar}>
-     <Link to="/">
-  <img className={styles.logo} src={logo} alt="logo" />
-</Link>
+      <Link to="/">
+        <img className={styles.logo} src={logo} alt="logo" />
+      </Link>
 
-      <nav className={styles.nav}>
-        <Link to="/proyectos" className={styles.a} >
+      {/* HAMBURGUESA */}
+      <div className={styles.hamburger} onClick={toggleMenu}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <nav className={`${styles.nav} ${isOpen ? styles.open : ""}`}>
+        <Link to="/proyectos" className={styles.a}>
           PROYECTOS
           <span className={styles.icon}>
             <img src={flecha} alt="icono" />
           </span>
         </Link>
 
-        <Link to="/conoceme" className={styles.a}>CONÓCEME
+        <Link to="/conoceme" className={styles.a}>
+          CONÓCEME
           <span className={styles.icon}>
             <img src={flecha} alt="icono" />
           </span>
@@ -38,10 +51,10 @@ const NavBar = () => {
           </span>
         </Link>
       </nav>
-    
     </header>
   );
 };
 
 export default NavBar;
+
 

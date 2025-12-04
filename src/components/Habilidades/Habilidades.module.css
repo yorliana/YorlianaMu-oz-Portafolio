@@ -93,25 +93,123 @@ color: white;
 }
 
 
-/* 📱 MÓVILES */
-@media (max-width: 768px) {
+/* ----------- RESPONSIVE ----------- */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 992px) {
+  .container {
+    padding: 20px;
+  }
+
+  .heroImage {
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 20px;
+    align-items: center;
+    position: relative;
+  }
+
+  .cuadro,
+  .y,
+  .cuadros {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+    width: 90px;
+    height: 90px;
+  }
+
+  .linea {
+    width: 100%;
+    margin: 30px 0;
+    height: auto;
+  }
+
+  .h1 {
+    padding-left: 0;
+    font-size: 18px;
+    word-spacing: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
   .wrapper {
-    flex-direction: column; /* imagen arriba, texto abajo */
+    flex-direction: column;
     gap: 20px;
+    align-items: center;
     text-align: center;
   }
 
   .textContainer {
-    padding-left: 0;
-    margin-top: 0;
+    margin-left: 0;
+    margin-top: 2rem;
+    max-width: 300px;
   }
 
   .letras {
     font-size: 18px;
-  }
-
-  .imageContainer img {
-    max-width: 280px; /* más pequeña para móvil */
+    line-height: 1.4;
   }
 }
 
+/* Móviles grandes */
+@media (max-width: 768px) {
+  .cuadro,
+  .y,
+  .cuadros {
+    width: 80px;
+    height: 80px;
+  }
+
+  .textContainer {
+    max-width: 250px;
+  }
+
+  .letras {
+    font-size: 16px;
+  }
+
+  .h1 {
+    font-size: 16px;
+    word-spacing: 15px;
+  }
+
+  .heroImage img {
+    max-width: 250px;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .cuadro,
+  .y,
+  .cuadros {
+    width: 60px;
+    height: 60px;
+  }
+
+  .textContainer {
+    max-width: 200px;
+    margin-top: 1.5rem;
+  }
+
+  .letras {
+    font-size: 14px;
+  }
+
+  .h1 {
+    font-size: 14px;
+    word-spacing: 10px;
+    padding-left: 0;
+  }
+
+  .heroImage img {
+    max-width: 180px;
+  }
+
+  .linea {
+    width: 100%;
+    margin: 20px 0;
+  }
+}

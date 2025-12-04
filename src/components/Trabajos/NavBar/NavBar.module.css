@@ -66,3 +66,116 @@ padding-right: 100px;
   opacity: 0.8;
 }
 
+/* ----------- RESPONSIVE ----------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 20px 30px;
+    background-position: center;
+  }
+
+  .nav {
+    gap: 30px;
+  }
+
+  .logo {
+    width: 160px;
+    padding-left: 20px;
+  }
+
+  .a {
+    font-size: 9px;
+    padding-right: 40px;
+    letter-spacing: 5px;
+  }
+}
+
+/* Móviles grandes */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .logo {
+    padding-left: 0;
+    width: 150px;
+  }
+
+  .nav {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .a {
+    padding-right: 0;
+    font-size: 9px;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  .nav {
+    gap: 15px;
+  }
+
+  .a {
+    font-size: 8px;
+    letter-spacing: 3px;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .icon img {
+    width: 20px;
+    height: 14px;
+  }
+}
+/* Hamburguesa alineada a la izquierda */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 2000;
+  position: relative;
+ color: white;
+}
+
+/* Para alinear hamb. y logo verticalmente */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;  /* espacio entre la hamburguesa y el logo */
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  /* Empujar nav a la derecha en móvil */
+  .nav {
+    margin-left: auto;
+  }
+}

@@ -1,42 +1,43 @@
-/* Contenedor principal */
+/* Navbar desktop existente */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 25px 60px;
   background: white;
-   border-bottom: 1px solid #ccc; 
-   font-family: sans-serif;
-   font-weight: 700;
-}
-.logo{
-  width: 200px;
-  padding-left: 50px;
-}
-/* Contenedor del menú */
-.nav {
-  display: flex;
-  gap: 70px;              /* separación horizontal EXACTA */
-  align-items:left;
+  border-bottom: 1px solid #ccc;
+  font-family: sans-serif;
+  font-weight: 700;
+  position: relative;
 }
 
-/* Link del menú */
+.logo {
+  width: 200px;
+  padding-left: 50px;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  transition: max-height 0.3s ease;
+}
+
 .a {
   display: flex;
   align-items: center;
-  gap: 8px;              /* espacio entre texto y círculo */
+  gap: 8px;
   font-size: 11px;
   text-decoration: none;
-    letter-spacing: 8px; 
-    font-family: sans-serif; 
-    font-weight:  700;
-color: black;
-padding-right: 30px;
+  letter-spacing: 8px;
+  font-weight: 700;
+  color: black;
+  padding-right: 30px;
 }
 
-/* Círculo negro */
 .icon {
-   width: 22px;
+  width: 22px;
   height: 22px;
   background: black;
   border-radius: 50%;
@@ -44,20 +45,65 @@ padding-right: 30px;
   align-items: center;
   justify-content: center;
 }
-
-/* Imagen PNG dentro del círculo */
 .icon img {
   width: 30px;
-  height:20px;
-   /* hace la flecha blanca */
+  height: 20px;
 }
 
-/* Hover animado */
 .a:hover .icon {
   transform: scale(1.15);
   transition: 0.2s;
 }
-
 .a:hover {
   opacity: 0.8;
+}
+
+/* HAMBURGUESA */
+.hamburger {
+  display: none; /* oculta en desktop */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 101;
+  
+}
+.hamburger div {
+  width: 80%;
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+ margin-bottom: 5px
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 20px;
+    left: 10;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+    max-height: 0; /* cerrado inicialmente */
+    transition: max-height 0.3s ease;
+    z-index: 99;
+  }
+
+  .nav.open {
+    max-height: 500px; /* abierto al hacer click */
+  }
+
+  .nav a {
+    padding: 15px;
+    justify-content: center;
+    gap: 10px;
+  }
 }

@@ -102,3 +102,125 @@ padding-bottom: 10rem;
   width: 100%;
   opacity: 0.8;
 }
+/* ----------- RESPONSIVE ----------- */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 992px) {
+  .areaCentral {
+    width: 350px;
+    height: 350px;
+    gap: 30px;
+  }
+
+  .gifDetras {
+    width: 1000px;
+    top: 65%;
+  }
+
+  .gridGithub {
+    grid-template-columns: repeat(3, 80px);
+    gap: 15px;
+    margin-top: 15rem;
+    margin-bottom: 20px;
+  }
+
+  .gridGmail {
+    grid-template-columns: repeat(3, 100px);
+    gap: 15px;
+    padding-left: 15rem;
+    padding-top: 2rem;
+  }
+
+  .gridLinkedin {
+    grid-template-columns: repeat(3, 120px);
+    gap: 15px;
+    padding-right: 15rem;
+    padding-bottom: 5rem;
+  }
+
+  .caja {
+    padding: 10px;
+  }
+}
+
+/* Móviles grandes */
+@media (max-width: 768px) {
+  .areaCentral {
+    width: 1000px;
+    height: 800px;
+    gap: 20px;
+  }
+
+  .gifDetras {
+    width: 1200px;
+    top: 60%;
+    bottom: 50px;
+  }
+
+  .gridGithub {
+    grid-template-columns: repeat(3, 70px);
+    gap: 12px;
+    margin-top: 12rem;
+  }
+
+  .gridGmail {
+    grid-template-columns: repeat(3, 80px);
+    gap: 12px;
+    padding-left: 8rem;
+    padding-top: 1.5rem;
+  }
+
+  .gridLinkedin {
+    grid-template-columns: repeat(3, 90px);
+    gap: 12px;
+    padding-right: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  .caja {
+    padding: 8px;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .areaCentral {
+    width: 250px;
+    height: 250px;
+    gap: 15px;
+  }
+
+  .gifDetras {
+    width: 1200px;
+
+    padding-bottom: -200px;
+  }
+
+  .gridGithub {
+    grid-template-columns: repeat(3, 60px);
+    gap: 10px;
+    margin-top: 10rem;
+  }
+
+  .gridGmail {
+    grid-template-columns: repeat(3, 60px);
+    gap: 10px;
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+
+  .gridLinkedin {
+    grid-template-columns: repeat(3, 60px);
+    gap: 10px;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .caja1 {
+    padding: 6px;
+  }
+
+  .imgBottom {
+    margin-top: 30px;
+  }
+}
