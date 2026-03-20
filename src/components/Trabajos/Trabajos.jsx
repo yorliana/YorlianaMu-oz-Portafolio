@@ -19,7 +19,7 @@ export default function Trabajos() {
       titulo: "Donatella",
       tags: "#react #redux #node #styled-components #postgreSQL",
       fecha: "Junio, 2021",
-      link: "https://compu-shop-git-master-ctroubles.vercel.app/home",
+      link: "https://donatella-dashboard-6xsd.vercel.app/",
     },
     {
       img: img3,

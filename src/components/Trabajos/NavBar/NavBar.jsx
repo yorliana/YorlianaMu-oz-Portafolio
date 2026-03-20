@@ -13,7 +13,14 @@ const NavBar = () => {
         <img className={styles.logo} src={logo} alt="logo" />
       </Link>
 
-      
+      <div
+        className={`${styles.hamburger} ${open ? styles.active : ""}`}
+        onClick={() => setOpen(!open)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       {/* NAV */}
       <nav className={`${styles.nav} ${open ? styles.active : ""}`}>
         <Link to="/proyectos" className={styles.a}>
